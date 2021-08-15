@@ -51,15 +51,15 @@ export default function LandingPage()
         for(var i=0;i<data.length; i++)
         {
             count += data[i].quantity;
-            price += data[i].price*data[i].quantity;
+            price += data[i].price;
 
             if(data[i].type==="fiction")
            {
-               type += ( 0.15 * ( data[i].price*data[i].quantity ) ) + data[i].discount*data[i].quantity;
+               type += ( 0.15 * ( DATA[i].price*data[i].quantity ) ) + DATA[i].discount*data[i].quantity;
            }
            else
            {
-                dis += data[i].discount*data[i].quantity;
+                dis += DATA[i].discount*data[i].quantity;
            }
         }
         setTotalItems(count);
@@ -83,6 +83,8 @@ export default function LandingPage()
                 {
                     myArray[i].quantity = myArray[i].quantity-1; 
                 } 
+
+                myArray[i].price = DATA[i].price*myArray[i].quantity; 
             }
         }
 
