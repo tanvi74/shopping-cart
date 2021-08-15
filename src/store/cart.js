@@ -22,7 +22,7 @@ const AppContext = createContext({});
 
 const AppProvider = ({children}) =>
 {
-    const [dataOfItems, setdataofItems] = useState(() => getLocalStorage("data", DATA));
+    const [dataOfItems, setdataofItems] = useState(() => getLocalStorage("data", DATA.map(item => ({...item, quantity: 1}))));
     
     const setCurrentData = (arr) => 
     {

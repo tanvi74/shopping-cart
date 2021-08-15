@@ -57,7 +57,7 @@ export default function ItemList({data, removeFunction, addFunction, totalItems,
                                                 <i className="material-icons"  onClick={()=>handleAdd(item)}>add</i>
                                             </span>
                                         </td>
-                                        <td className="price">${item.price}</td>
+                                        <td className="price">${item.price*item.quantity}</td>
                                     </tr>
                                 )
                             })
