@@ -1,0 +1,24 @@
+.headingIcon{
+    vertical-align: sub;
+    color: #626D77;
+    font-size: 30px;
+}
+
+.heading{
+    font-size: 30px;
+    color: #626D77;
+
+}
+
+.headingDiv{
+    margin-bottom: 10px;
+}
+
+.alert{
+    background-color: #F8D7DA;
+    color: #7F7B76;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 600;
+}

@@ -1,0 +1,46 @@
+h5{
+    font-weight: 600;
+}
+
+.totalPriceContainer{
+    padding: 10px 20px;
+}
+
+.totalPrice{
+    border: 1px solid #DDE1E3;
+    color: #626F78;
+    margin: 55px 20px;
+}
+
+@media screen and (max-width: 600px) {
+   .totalPrice{
+    margin-top: 10px !important;
+   }
+  }
+  
+
+tr{
+    border-bottom: none !important;
+}
+
+.discount{
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+}
+
+.result{
+    background-color: #EFEFEF;
+    padding: 10px 15px 5px;
+    font-weight: 600;
+    margin: 0px !important;
+
+}
+
+.total{
+    font-size: 20px;
+}
+
+.order{
+    padding-top: 5px !important;
+    font-size: 17px !important;
+}
